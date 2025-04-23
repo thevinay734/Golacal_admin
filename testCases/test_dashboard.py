@@ -3,19 +3,15 @@ import time
 from pageObjects.dashboardPage import Dashboard
 from selenium import webdriver
 from pageObjects.loginPage import Login
-
-
+from utilities.readProperties import ReadConfig
 
 class Test_dashboard_view:
+    baseUrl = ReadConfig.getApplicationURL()
+    username = ReadConfig.getUserEmail()
+    password = ReadConfig.getUserPassword()
 
-    def setup_method(self):
-        self.baseUrl = "http://99.79.10.54:3000/admin/login"
-        self.username = "golocal@gmail.com"
-        self.password = "golocal@123"
-        self.driver = webdriver.Chrome()
-
-    def test_open_dashboard_view(self):
-        self.driver.maximize_window()
+    def test_open_dashboard_view(self, setup):
+        self.driver = setup
         self.driver.get(self.baseUrl)
         time.sleep(3)
         login = Login(self.driver)
