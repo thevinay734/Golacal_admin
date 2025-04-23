@@ -7,7 +7,7 @@ from pageObjects.loginPage import Login
 
 class Test_001_login:
     def setup_method(self):
-        self.baseUrl  = "http://99.79.10.54:3000/admin/login"
+        self.baseUrl = "http://99.79.10.54:3000/admin/login"
         self.username = "golocal@gmail.com"
         self.password = "golocal@123"
         self.driver = webdriver.Chrome()
