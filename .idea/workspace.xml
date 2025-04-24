@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00f15ede-2c07-41be-b5c8-d533c5b762f1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pageObjects/serviceProviderPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCases/test_dashboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/test_dashboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageObjects/loginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObjects/loginPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testCases/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCases/test_service_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/test_service_provider.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +39,7 @@
   "keyToString": {
     "Python tests.Python tests in test_dashboard.py.executor": "Run",
     "Python tests.Python tests in test_login.py.executor": "Run",
+    "Python tests.Python tests in test_service_provider.py.executor": "Run",
     "Python tests.Python tests in test_user.py.executor": "Run",
     "Python.browser_setup.executor": "Run",
     "Python.conftest.executor": "Run",

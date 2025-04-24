@@ -31,7 +31,6 @@ import time
 from pageObjects.loginPage import Login
 from utilities.readProperties import ReadConfig
 
-
 class Test_001_login:
     baseUrl = ReadConfig.getApplicationURL()
     username = ReadConfig.getUserEmail()
@@ -49,6 +48,10 @@ class Test_001_login:
         time.sleep(3)
         login.clickLogin()
         time.sleep(5)
+        login.clickLogOut()
+        time.sleep(5)
+        login.clickPopupOkButton()
+        time.sleep(3)
 
 
 

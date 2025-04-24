@@ -5,7 +5,8 @@ class Login:
     textbox_username_id = "email"
     textbox_password_id = "password"
     button_login_xpath = "//button[normalize-space()='Login']"
-    press_category = "//span[normalize-space()='Category Management']"
+    logout_button_xpath = "//a[@href='/admin/destroy']"
+    popup_ok_button_xpath = "//button[contains(@class, 'swal-button--confirm')]"
 
     def __init__(self, driver):
         self.driver = driver
@@ -19,5 +20,8 @@ class Login:
     def clickLogin(self):
         self.driver.find_element(By.XPATH, self.button_login_xpath).click()
 
-    def clickCategoryManage(self):
-        self.driver.find_element(By.XPATH, self.press_category).click()
+    def clickLogOut(self):
+        self.driver.find_element(By.XPATH, self.logout_button_xpath).click()
+
+    def clickPopupOkButton(self):
+        self.driver.find_element(By.XPATH, self.popup_ok_button_xpath).click()
